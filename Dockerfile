@@ -34,6 +34,6 @@ EXPOSE 3000/tcp
 
 # Set user and define healthcheck
 USER bun
-HEALTHCHECK --interval=5s --timeout=5s --start-period=5s --retries=3 CMD curl --fail http://localhost:3000/healthcheck
+HEALTHCHECK --interval=5s --timeout=5s --start-period=5s --retries=3 CMD curl --fail http://localhost:3000/
 
 CMD ["bun", "--bun", "/app/server.ts"]

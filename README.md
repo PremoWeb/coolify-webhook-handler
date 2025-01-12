@@ -55,6 +55,19 @@ This webhook handler is currently designed for **Gitea** and **Gitea forks**. Fu
 
    The server will start on `http://localhost:3000`.
 
+## Deployment to Coolify
+
+1. In Coolify, create a new application and choose the **Dockerfile** option.
+
+2. Set the port for the application to `3000` to match the default port used by the webhook handler.
+
+3. Pick a subdomain or URL for your deployment, such as:
+   ```url
+   https://deployments.your-domain.com
+   ```
+
+4. Follow the prompts in Coolify to complete the deployment process.
+
 ## Setting Up `WEBHOOKS_SECRET`
 
 1. Generate a strong secret key:
